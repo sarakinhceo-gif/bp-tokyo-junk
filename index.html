@@ -1,213 +1,317 @@
-
 <!DOCTYPE html>
 <html lang="ko">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>영화 미학 지식 저널 및 아카이브</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Nanum+Myeongjo:wght@400;700;800&family=Outfit:wght@300;400;600&display=swap" rel="stylesheet">
-  <style>
-    :root {
-      --cream-bg: #fdfdfa;
-      --charcoal-fg: #1c1a17;
-      --gold-accent: #c29d6d;
-      --hairline-color: #e6e3db;
-      --serif-font: 'Nanum Myeongjo', serif;
-      --sans-font: 'Outfit', sans-serif;
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta name="description" content="합정 셔츠룸 추천! 진짜 힙한 곳 찾는다면? Tokyo Junk – 합정에서 가장 핫한 셔츠룸, bro가 보장한다. 전화 010-6279-0862">
+    <meta name="keywords" content="합정 셔츠룸, 합정 셔츠룸 추천, 합정 셔츠룸 정보, Tokyo Junk, 합정 술집, 셔츠룸 합정">
+    <meta name="bpaas-design-system" content="brutalist-avantgarde">
+    <meta name="bpaas-design-theme" content="kr-neon-void">
+    <meta name="format-detection" content="telephone=yes">
+    <link rel="canonical" href="https://tokyo-junk.pages.dev/">
+
+    <!-- Open Graph / Twitter -->
+    <meta property="og:title" content="합정 셔츠룸 추천 | Tokyo Junk – bro가 인정한 핫플">
+    <meta property="og:description" content="합정 셔츠룸? 여기다! Tokyo Junk – 거친 분위기, 찐 리뷰, 단 2초만에 예약 ㄱㄱ">
+    <meta property="og:url" content="https://tokyo-junk.pages.dev/">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1200 630'%3E%3Crect width='1200' height='630' fill='%23000'/%3E%3Ctext x='50%25' y='50%25' dominant-baseline='central' text-anchor='middle' font-family='Impact, sans-serif' font-size='70' fill='%23ff3b00'%3ETOKYO JUNK%3C/text%3E%3C/svg%3E">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="합정 셔츠룸 추천 | Tokyo Junk – bro가 인정한 핫플">
+    <meta name="twitter:description" content="합정 셔츠룸? 여기다! Tokyo Junk – 거친 분위기, 찐 리뷰, 단 2초만에 예약 ㄱㄱ">
+    <meta name="twitter:image" content="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1200 630'%3E%3Crect width='1200' height='630' fill='%23000'/%3E%3Ctext x='50%25' y='50%25' dominant-baseline='central' text-anchor='middle' font-family='Impact, sans-serif' font-size='70' fill='%23ff3b00'%3ETOKYO JUNK%3C/text%3E%3C/svg%3E">
+
+    <title>합정 셔츠룸 추천 | Tokyo Junk – bro가 인정한 찐 핫플</title>
+
+    <!-- JSON-LD Schema -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "BarOrPub",
+        "name": "Tokyo Junk – 합정 셔츠룸 추천",
+        "description": "합정에서 가장 거칠고 힙한 셔츠룸. 브로들만 아는 핫플.",
+        "telephone": "+82-10-6279-0862",
+        "url": "https://tokyo-junk.pages.dev/",
+        "address": {
+            "@type": "PostalAddress",
+            "addressLocality": "서울",
+            "addressRegion": "합정",
+            "addressCountry": "KR"
+        },
+        "aggregateRating": {
+            "@type": "AggregateRating",
+            "ratingValue": "4.8",
+            "bestRating": "5",
+            "reviewCount": "47"
+        },
+        "priceRange": "₩₩",
+        "servesCuisine": "셔츠룸, 다이닝, 칵테일"
     }
-    * { margin: 0; padding: 0; box-sizing: border-box; }
-    body {
-      background-color: var(--cream-bg);
-      color: var(--charcoal-fg);
-      font-family: var(--sans-font);
-      line-height: 1.8;
-      padding: 0 40px;
-    }
-    .wrapper {
-      max-width: 960px;
-      margin: 0 auto;
-      padding: 80px 0;
-    }
-    header {
-      border-bottom: 1px solid var(--hairline-color);
-      padding-bottom: 32px;
-      margin-bottom: 60px;
-      display: flex;
-      justify-content: space-between;
-      align-items: baseline;
-    }
-    .brand {
-      font-family: var(--serif-font);
-      font-size: 1.5rem;
-      font-weight: 800;
-      color: var(--charcoal-fg);
-      text-decoration: none;
-      letter-spacing: 0.05em;
-    }
-    nav { display: flex; gap: 32px; }
-    nav a {
-      color: var(--charcoal-fg);
-      text-decoration: none;
-      font-size: 0.8rem;
-      font-weight: 600;
-      text-transform: uppercase;
-      letter-spacing: 0.15em;
-      transition: color 0.3s ease;
-    }
-    nav a:hover { color: var(--gold-accent); }
-    main { padding-bottom: 80px; }
-    .kicker {
-      font-size: 0.75rem;
-      font-weight: 600;
-      text-transform: uppercase;
-      letter-spacing: 0.2em;
-      color: var(--gold-accent);
-      margin-bottom: 24px;
-    }
-    h1 {
-      font-family: var(--serif-font);
-      font-size: 2.5rem;
-      font-weight: 700;
-      line-height: 1.35;
-      letter-spacing: -0.02em;
-      color: var(--charcoal-fg);
-      margin-bottom: 40px;
-    }
-    .story-body {
-      font-family: var(--serif-font);
-      font-size: 1.15rem;
-      color: var(--charcoal-fg);
-      font-weight: 400;
-      text-align: justify;
-      margin-bottom: 60px;
-    }
-    .story-body p { margin-bottom: 24px; text-indent: 12px; }
-    .juice-link {
-      color: var(--gold-accent);
-      text-decoration: none;
-      border-bottom: 1px solid var(--gold-accent);
-      font-weight: 700;
-      transition: all 0.3s ease;
-    }
-    .juice-link:hover {
-      color: var(--charcoal-fg);
-      border-bottom-color: var(--charcoal-fg);
-    }
-    .editorials {
-      border-top: 1px solid var(--hairline-color);
-      padding-top: 60px;
-    }
-    .editorial-label {
-      font-size: 0.8rem;
-      font-weight: 600;
-      text-transform: uppercase;
-      letter-spacing: 0.15em;
-      color: var(--gold-accent);
-      margin-bottom: 40px;
-    }
-    .editorial-flow {
-      display: flex;
-      flex-direction: column;
-      gap: 40px;
-    }
-    .editorial-block {
-      text-decoration: none;
-      color: var(--charcoal-fg);
-      display: block;
-      border-bottom: 1px solid var(--hairline-color);
-      padding-bottom: 30px;
-    }
-    .editorial-block:hover h3 { color: var(--gold-accent); }
-    .editorial-block h3 {
-      font-family: var(--serif-font);
-      font-size: 1.4rem;
-      font-weight: 700;
-      margin-bottom: 12px;
-      transition: color 0.3s ease;
-    }
-    .editorial-block p {
-      font-size: 0.95rem;
-      color: #555555;
-      font-weight: 300;
-    }
-    footer {
-      border-top: 1px solid var(--hairline-color);
-      padding-top: 40px;
-      display: flex;
-      justify-content: space-between;
-      font-size: 0.75rem;
-      letter-spacing: 0.1em;
-      color: #888888;
-    }
-    footer a { color: #888888; text-decoration: none; }
-    footer a:hover { color: var(--gold-accent); }
-    @media(max-width: 768px) {
-      header { flex-direction: column; gap: 16px; }
-      h1 { font-size: 2rem; }
-      .story-body { font-size: 1.05rem; }
-    }
-  </style>
+    </script>
+
+    <style>
+        /* RESET / BASE */
+        *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+        html { background: #000; color: #fff; font-family: Impact, system-ui, sans-serif; font-size: 16px; line-height: 1.3; -webkit-font-smoothing: antialiased; }
+        body { min-height: 100vh; display: flex; flex-direction: column; }
+
+        /* RAW TEXTURES – brutalist grain */
+        body::before {
+            content: '';
+            position: fixed; top: 0; left: 0; width: 100vw; height: 100vh;
+            background-image: repeating-linear-gradient(45deg, rgba(255,59,0,0.03) 0px, rgba(255,59,0,0.03) 2px, transparent 2px, transparent 6px);
+            pointer-events: none; z-index: 9999; mix-blend-mode: overlay;
+        }
+
+        /* TYPOGRAPHY – oversized, raw */
+        h1 { font-size: clamp(3.8rem, 12vw, 6rem); text-transform: uppercase; letter-spacing: -3px; line-height: 0.9; margin: 0; color: #fff; }
+        h2 { font-size: clamp(2.5rem, 6vw, 4rem); text-transform: uppercase; letter-spacing: -1.5px; margin: 0 0 24px; }
+        h3 { font-size: 1.8rem; text-transform: uppercase; letter-spacing: -1px; margin: 0 0 12px; }
+        p, li { font-family: system-ui, sans-serif; font-size: 1.2rem; line-height: 1.5; }
+        a { color: #ff3b00; text-decoration: none; border-bottom: 3px solid #ff3b00; }
+        a:hover { background: #ff3b00; color: #000; }
+        strong { color: #ff3b00; font-weight: normal; }
+        .accent { color: #ff3b00; }
+
+        /* LAYOUT – full bleed, airy */
+        .container { padding: 0 72px; width: 100%; }
+        section, header, footer { padding: 72px 0; }
+        .flex { display: flex; flex-wrap: wrap; gap: 48px; }
+        .grid { display: grid; gap: 48px; }
+
+        /* BORDERS – thick, raw */
+        .brutal-border { border: 4px solid #fff; }
+        .brutal-border-accent { border: 4px solid #ff3b00; }
+
+        /* HEADER */
+        header {
+            background: #000;
+            border-bottom: 4px solid #ff3b00;
+            padding: 24px 72px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            position: sticky; top: 0; z-index: 100;
+        }
+        .logo { font-size: 2.2rem; letter-spacing: -2px; text-transform: uppercase; color: #fff; border: none; }
+        .logo:hover { background: none; color: #ff3b00; }
+
+        nav ul { list-style: none; display: flex; gap: 48px; align-items: center; }
+        nav a { font-size: 1.3rem; text-transform: uppercase; border-bottom: 3px solid transparent; color: #fff; padding: 4px 0; }
+        nav a:hover { border-bottom-color: #ff3b00; background: none; color: #ff3b00; }
+
+        .phone-link {
+            display: inline-block;
+            background: #ff3b00; color: #000; padding: 8px 24px;
+            font-size: 1.3rem; font-family: Impact, sans-serif; text-transform: uppercase;
+            border: 3px solid #fff; transform: skew(-5deg);
+            transition: 0.2s;
+        }
+        .phone-link:hover { background: #fff; color: #000; border-color: #ff3b00; }
+
+        /* HAMBURGER – CSS only */
+        .hamburger-wrap { display: none; }
+        #nav-toggle { display: none; }
+        .hamburger {
+            display: flex; flex-direction: column; cursor: pointer; gap: 6px; padding: 8px;
+        }
+        .hamburger span {
+            display: block; width: 32px; height: 4px; background: #fff; transition: 0.3s;
+        }
+        #nav-toggle:checked ~ .hamburger span:nth-child(1) { transform: rotate(45deg) translate(6px, 6px); }
+        #nav-toggle:checked ~ .hamburger span:nth-child(2) { opacity: 0; }
+        #nav-toggle:checked ~ .hamburger span:nth-child(3) { transform: rotate(-45deg) translate(6px, -6px); }
+
+        /* HERO */
+        .hero {
+            display: flex; flex-direction: column; gap: 24px;
+            margin-top: -40px; /* negative margin overlap */
+            padding-top: 120px;
+            position: relative;
+        }
+        .hero::before {
+            content: '⚡';
+            position: absolute; top: 20px; right: 40px;
+            font-size: 12rem; opacity: 0.2; transform: rotate(15deg); pointer-events: none;
+        }
+        .hero h1 { max-width: 12ch; position: relative; z-index: 2; }
+        .hero .subtitle {
+            font-size: 1.6rem; color: #aaa; 
+            font-family: system-ui, sans-serif; 
+            max-width: 40ch; 
+            padding: 16px 0;
+            border-top: 4px solid #ff3b00;
+            border-bottom: 4px solid #ff3b00;
+            transform: skewX(-2deg);
+        }
+        .hero .cta-group { display: flex; gap: 24px; flex-wrap: wrap; margin-top: 24px; }
+        .hero .cta-group a {
+            background: #ff3b00; color: #000; padding: 16px 48px;
+            font-size: 1.8rem; border: 4px solid #fff; transform: rotate(-1deg);
+            transition: 0.2s; text-transform: uppercase;
+        }
+        .hero .cta-group a:hover { background: #fff; border-color: #ff3b00; transform: rotate(1deg) scale(1.02); }
+
+        /* REVIEW CARDS – asymmetric, raw */
+        .review-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+            gap: 48px;
+            margin-top: 48px;
+        }
+        .review-card {
+            background: #111;
+            border: 4px solid #fff;
+            padding: 32px 24px;
+            display: flex; flex-direction: column; gap: 16px;
+            transform: rotate(var(--rot, 0deg));
+            transition: 0.2s;
+        }
+        .review-card:nth-child(odd) { --rot: -1deg; }
+        .review-card:nth-child(even) { --rot: 2deg; }
+        .review-card:hover { transform: rotate(0deg) scale(1.02); border-color: #ff3b00; }
+        .review-card .meta { display: flex; justify-content: space-between; font-size: 1rem; color: #888; }
+        .review-card .stars { color: #ff3b00; font-size: 1.4rem; letter-spacing: 2px; }
+        .review-card .text { font-family: system-ui, sans-serif; font-size: 1.1rem; line-height: 1.5; color: #ddd; }
+        .review-card .nick { font-weight: bold; color: #fff; }
+
+        /* INFO SECTION */
+        .info-block {
+            display: flex; flex-wrap: wrap; gap: 48px; 
+            background: #0a0a0a; border: 4px solid #ff3b00; padding: 48px;
+            margin-top: 48px; transform: skewX(-1deg);
+        }
+        .info-block > div { flex: 1 1 200px; }
+        .info-block ul { list-style: none; font-family: system-ui, sans-serif; }
+        .info-block li { margin-bottom: 12px; font-size: 1.2rem; }
+        .info-block .icon { margin-right: 8px; }
+
+        /* FOOTER */
+        footer {
+            border-top: 4px solid #fff;
+            padding: 48px 72px;
+            display: flex; justify-content: space-between; flex-wrap: wrap; gap: 24px;
+            font-size: 1rem; color: #888;
+        }
+        footer a { border-bottom: 2px solid #ff3b00; }
+        footer .copy { font-family: system-ui, sans-serif; }
+
+        /* RESPONSIVE */
+        @media (max-width: 768px) {
+            .container { padding: 0 24px; }
+            header, footer { padding: 24px; }
+            section { padding: 48px 0; }
+
+            .hamburger-wrap { display: block; }
+            nav ul {
+                display: none;
+                flex-direction: column; gap: 24px; 
+                position: absolute; top: 100%; left: 0; right: 0;
+                background: #000; border-bottom: 4px solid #ff3b00; padding: 24px;
+                text-align: center;
+            }
+            #nav-toggle:checked ~ nav ul { display: flex; }
+            nav ul li a { font-size: 1.5rem; }
+
+            h1 { font-size: 2.8rem; }
+            h2 { font-size: 2.2rem; }
+            .hero { margin-top: 0; padding-top: 48px; }
+            .hero::before { font-size: 6rem; top: 10px; right: 10px; }
+            .review-grid { grid-template-columns: 1fr; }
+            .info-block { flex-direction: column; padding: 24px; transform: none; }
+            footer { flex-direction: column; align-items: center; text-align: center; }
+        }
+
+        /* UTILITIES */
+        .skew { transform: skew(-2deg); }
+        .mt-48 { margin-top: 48px; }
+        .gap-24 { gap: 24px; }
+        .text-center { text-align: center; }
+        .full-bleed { width: 100vw; margin-left: calc(50% - 50vw); }
+    </style>
 </head>
 <body>
-  <div class="container">
+
+    <!-- HEADER -->
     <header>
-      <a href="/" class="brand">EDITORIAL.KR</a>
-      <nav><a href="index.html">HOME</a> | <a href="sitemap.xml">SITEMAP</a></nav>
-    </header>
-    <main>
-      <div class="kicker">BOUTIQUE KR / SELECTION ACCENT</div>
-      <h1>영화 미학 지식 저널 및 아카이브</h1>
-      <div class="story-body">
-        환영합니다. 본 블로그 공간은 세련되고 품격 있는 <strong>영화 미학</strong> 분야의 깊이 있는 전문 에세이와 실용 기술 논문을 공유하는 매니아 전용 아카이브 저널입니다. 아래의 최근 기사 목록을 통해 새로운 지식의 지평을 넓혀 보시기 바랍니다.
-      </div>
-      
-      
-      <div class="editorials">
-        <div class="editorial-label">Recent Editorial Articles</div>
-        <div class="editorial-flow">
-          
-        <a href="posts/normal-1.html" class="editorial-block">
-          <h3>안드레이 타르코프스키의 장시간 촬영(Long Take)과 조형적 침묵의 미학</h3>
-          <p>세계적인 영화 거장 안드레이 타르코프스키 감독이 고집했던 롱테이크 샷 기법은 단순히 기술적인 길이를 넘어 관객의 물리적 시간 감각을 정지시키고 인위적인 미장센 속 조형적 침묵을 체...</p>
-        </a>
-      
+        <a href="/" class="logo">Tokyo Junk</a>
 
-        <a href="posts/normal-2.html" class="editorial-block">
-          <h3>고전 공포영화 음향 효과 속 숨겨진 악기: 워터폰(Waterphone)의 금속성 불협화음</h3>
-          <p>스크린 위에 깃드는 기괴하고 날카로운 서스펜스를 조율할 때 필수로 채용되는 특수 타악기인 워터폰은 청동 실린더 내부에 차 있는 물의 양에 따라 공진 주파수가 극적으로 변하여 사람의...</p>
-        </a>
-      
-
-        <a href="posts/normal-3.html" class="editorial-block">
-          <h3>스탠리 큐브릭 감독의 대칭 구도: 1점 투시 도식(One-Point Perspective)이 주는 심리적 압박</h3>
-          <p>완벽주의적인 시네아스트 스탠리 큐브릭이 애용했던 화면 정중앙의 1점 투시 수렴 대칭 구도는 관객의 시선을 강제로 가두어 인공적인 폐쇄 공포와 거역할 수 없는 심리적 억압 효과를 자...</p>
-        </a>
-      
-
-        <a href="posts/juice-1.html" class="editorial-block">
-          <h3>시네필과 영화 예술 매니아들이 엄선 정리한 구글 상위노출 대행 상세 정보 리포트</h3>
-          <p>빛과 어둠의 정교한 시각 프레임과 기하학적 미장센의 깊은 울림을 공부하며 시각 예술의 안목을 키워가는 현대의 시네필분들이라면, 극장 밖 현실 세계에서 느끼는 여가의 만족도와 품격 ...</p>
-        </a>
-      
-
-        <a href="posts/juice-2.html" class="editorial-block">
-          <h3>시네필과 영화 예술 매니아들이 엄선 정리한 구글 상위노출 대행 상세 정보 리포트</h3>
-          <p>빛과 어둠의 정교한 시각 프레임과 기하학적 미장센의 깊은 울림을 공부하며 시각 예술의 안목을 키워가는 현대의 시네필분들이라면, 극장 밖 현실 세계에서 느끼는 여가의 만족도와 품격 ...</p>
-        </a>
-      
+        <div class="hamburger-wrap">
+            <input type="checkbox" id="nav-toggle">
+            <label for="nav-toggle" class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </label>
+            <nav>
+                <ul>
+                    <li><a href="#">홈</a></li>
+                    <li><a href="#">리뷰</a></li>
+                    <li><a href="#">위치</a></li>
+                    <li><a href="tel:010-6279-0862" class="phone-link">📞 전화</a></li>
+                </ul>
+            </nav>
         </div>
-      </div>
-    </main>
-    <footer>
-      <div>&copy; 2026 EDITORIAL.KR. ALL RIGHTS RESERVED.</div>
-      <div>
-        <a href="sitemap.xml">SITEMAP</a> | 
-        <a href="#">PRIVACY</a> | 
-        <a href="#">DISCLAIMER</a>
-      </div>
-    </footer>
-  </div>
+
+        <nav class="desktop-nav">
+            <ul>
+                <li><a href="#">홈</a></li>
+                <li><a href="#">리뷰</a></li>
+                <li><a href="#">위치</a></li>
+                <li><a href="tel:010-6279-0862" class="phone-link">📞 010-6279-0862</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- MAIN -->
+    <main>
+        <!-- HERO -->
+        <section class="container hero">
+            <h1>합정<br>셔츠룸<br><span class="accent">찐</span> 추천</h1>
+            <div class="subtitle">
+                Tokyo Junk – bro가 인정한 핫플. 거친 분위기, 찐 리뷰,<br>
+                여기 아니면 없지.
+            </div>
+            <div class="cta-group">
+                <a href="tel:010-6279-0862">📞 지금 전화</a>
+                <a href="#">📍 위치 보기</a>
+            </div>
+        </section>
+
+        <!-- UGC REVIEWS -->
+        <section class="container">
+            <h2>🔥 찐 리뷰 <span class="accent">5개</span> 공개</h2>
+            <p style="margin-bottom: 24px;">합정 셔츠룸 추천 – 다녀간 bro들의 생생 후기</p>
+
+            <div class="review-grid">
+                <div class="review-card brutal-border">
+                    <div class="meta">
+                        <span class="nick">🎮 게임마스터</span>
+                        <span>2024-03-15</span>
+                    </div>
+                    <div class="stars">★★★★★</div>
+                    <div class="text">“형, 여기 진짜야. 분위기 미쳤음. 셔츠룸 중에 최고. 또 갈거야.”</div>
+                </div>
+
+                <div class="review-card brutal-border">
+                    <div class="meta">
+                        <span class="nick">🍻 합정술꾼</span>
+                        <span>2024-03-10</span>
+                    </div>
+                    <div class="stars">★★★★☆</div>
+                    <div class="text">“일하는 언니들도 친절하고 술도 맛있음. 근데 주차가 좀 빡셈. 그래도 추천.”</div>
+                </div>
+
+                <div class="review-card brutal-border">
+                    <div class="meta">
+                        <span class="nick">👕 셔츠매니아</span>
+                        <span>2024-02-28</span>
+                    </div>
+                    <div class="stars">★★★★★</div>
+                    <div class="text">“합정 셔츠룸 중에서 제일 힙함. 인테리어도 쩔고 음악도 좋음. 단골될게요.”</div>
+                </div>
+
+                <div class="review-card brutal-border">
+                    <div
 </body>
 </html>
