@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://tokyo-junk.node-link.shop/sitemap.xml
+Sitemap: https://hongdae-song-room.node-link.shop/sitemap.xml
