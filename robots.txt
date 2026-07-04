@@ -1,4 +1,10 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://hongdae-song-room.node-link.shop/sitemap.xml
+User-agent: Googlebot
+Allow: /
+
+User-agent: Bingbot
+Allow: /
+
+Sitemap: https://nrb-apgujeong-guide.xyz/sitemap.xml
